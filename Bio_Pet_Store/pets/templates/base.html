@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('home')}}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('breed')}}" class="dropdown">Breeds</a>
+                <ul class="breed">
+                    <li><a href="#">Cats</a></li>
+                    <li><a href="#">Dogs</a></li>
+                    <li><a href="#">Horses</a></li>
+                    <li><a href="#">Birds</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Author</a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('register')}}">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('login')}}">Log In</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">{% block content %}{% endblock %}</div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div style="width: 18rem;">
+                <div class="card-header">
+                    Most Recent Posts
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Climate change</a></li>
+                    <li class="list-group-item"><a href="https://biofoods.co.ke/sustainability/" target="_blank">Sustainability</a></li>
+                    <li class="list-group-item"><a href="#">Health & Safety</a></li>
+                </ul>
+            </div>
+
+
+            <div style="width: 18rem;">
+                <div class="card-header">
+                    Help & Faqs
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Online ordering</a></li>
+                    <li class="list-group-item"><a href="#">Billing</a></li>
+                    <li class="list-group-item"><a href="#">Returns and Exchange Policy</a></li>
+                </ul>
+        </div>
+        <div class="socials">
+            <div><i class='fa-twitter' style='font-size:36px'></i></div>
+        </div>
+    </footer>
+</body>
+</html>

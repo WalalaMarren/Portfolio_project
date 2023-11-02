@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslateblue;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://smashinglogo.com/v3/envision/image.jpg?id=714f44ab-15e1-431b-9372-0d19a03c697e&format=desktop");
+}
+nav ul li{
+    margin-top: 10px;
+}
+nav ul li a{
+    color: black !important;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    background-color: blue;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+main{
+    background-color: gray;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+footer{
+    background-color: darkolivegreen;
+    width: 100%;
+    margin-bottom: 0px !important;
+    padding: 20px 0px 10px 5px;
+}
+.container-footer{
+    height: 50%;
+    width: 90%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkolivegreen;
+}
+.card-header, .list-group-item{
+    background-color: darkolivegreen !important;
+}
+.list-group li a{
+    text-decoration: none;
+    color: black !important;
+}
+.card-header{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.list-group li a:hover{
+    font-style: italic;
+    text-decoration: solid;
+    color: wheat !important;
+}
+
+/*Styling the registration page */
+.float-right{
+    width: 58%;
+    float: left;
+    height: 100vh;
+    background-image: url("https://w0.peakpx.com/wallpaper/660/35/HD-wallpaper-cute-puppy-cool-dog-love-puppies-small.jpg");
+    background-repeat: no-repeat;
+    background-size:cover !important;
+    margin-left: -70px !important;
+}
+form{
+    float: right;
+    width: 40%;
+}
+small a{
+    text-decoration: none;
+}
+
+/*styling the login page */
+.content-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.login-container{
+    float: right !important;
+    height: 100vh;
+    width: 80%;
+    margin-right: -70px;
+    background-image: url("https://www.birthdaywishes.expert/wp-content/uploads/2018/05/great-names-for-dogs-feature-image.jpg?ezimgfmt=rs:382x382/rscb1/ngcb1/notWebP");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*styling the index page */
+.facts{
+    width: 200px;
+    border-top: 20px;
+    height: 200px;
+    background-image: url("https://media.istockphoto.com/id/1322123064/photo/portrait-of-an-adorable-white-cat-in-sunglasses-and-an-shirt-lies-on-a-fabric-hammock.jpg?s=612x612&w=0&k=20&c=-G6l2c4jNI0y4cenh-t3qxvIQzVCOqOYZNvrRA7ZU5o=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-delay: 2s;
+    animation-name: example-animation;
+    animation-duration: 20s;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+}
+@keyframes example-animation {
+    0%   {background-color:red; left:0px; border-top:10px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*styling the breeds page */
+.breed{
+    padding-top: 8px;
+}
+.breed li{
+    list-style: none;
+    width: 100%;
+    border-top: 10px;
+}
+.breed li a{
+    text-decoration: none;
+    display: none;
+}
+.dropdown:hover .breed{
+    display: contents;
+}
+
+/*styling the contact page */
+.contact-div{
+    width: 100%;
+    height: 50vh;
+    padding-top: 10px;
+    display: flex;
+}
+.contact-div .text{
+    width: 60%;
+    height: 100%;
+    padding-top: 40px;
+}
+.contact-div .text h2{
+    color: wheat;
+}
+.contact-div .text p{
+    font-style: italic;
+    line-height: 40px;
+}
+.contact-div .imagery{
+    background-image:url("https://st.depositphotos.com/1011643/2345/i/450/depositphotos_23454624-stock-photo-customer-service-woman-smiling.jpg");
+    width: 60%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: -70px;
+}
